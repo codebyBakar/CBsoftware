@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { API } from "../../api/api";
+import { API, BASE_URL } from "../../api/api";
 import Sidebar from "../sidebar/Sidebar";
 import Navbar from "../navbar/Navbar";
 import { useNavigate } from "react-router-dom";
-import "./CreateOrder.css";
+import "./createorder.css";
 import { 
   FaShoppingCart, 
   FaPlus, 
@@ -250,7 +250,7 @@ function CreateOrder() {
                       <div className="product-image">
                         {!imageErrors[product._id] && product.image ? (
                           <img 
-                            src={`http://localhost:9100/uploads/${product.image}`} 
+                            src={`${BASE_URL}/uploads/${product.image}`} 
                             alt={product.name}
                             onError={() => handleImageError(product._id)}
                           />
