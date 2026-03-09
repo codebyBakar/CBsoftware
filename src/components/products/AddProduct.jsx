@@ -3,7 +3,7 @@ import { API } from "../../api/api";
 import Sidebar from "../sidebar/Sidebar";
 import Navbar from "../navbar/Navbar";
 import { useNavigate } from "react-router-dom";
-import "./AddProduct.css";
+import "./addproduct.css";
 import { FaCloudUploadAlt, FaTag, FaBox, FaDollarSign, FaList, FaFileAlt, FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 function AddProduct() {
