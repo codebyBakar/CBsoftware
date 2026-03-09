@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { API, BASE_URL } from "../../api/api";
 import Sidebar from "../sidebar/Sidebar";
 import Navbar from "../navbar/Navbar";
-import "./EditProduct.css";
+import "./editproduct.css";
 import { 
   FaCloudUploadAlt, 
   FaTag, 

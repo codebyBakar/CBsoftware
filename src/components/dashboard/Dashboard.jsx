@@ -8,7 +8,7 @@ import {
   XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
   AreaChart, Area
 } from 'recharts';
-import "./Dashboard.css";
+import "./dashboard.css";
 import { 
   FaDollarSign, 
   FaBox, 

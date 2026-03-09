@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { API } from "../../api/api";
 import Sidebar from "../sidebar/Sidebar";
 import Navbar from "../navbar/Navbar";
-import "./OrderSummary.css";
+import "./ordersummary.css";
 import { 
   FaSave, 
   FaPrint, 

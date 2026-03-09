@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Navbar.css";
+import "./navbar.css";
 import { FaBell, FaCircle, FaChevronDown, FaBox, FaShoppingBag, FaTag, FaDollarSign, FaUser, FaCheckCircle, FaTimesCircle, FaSpinner, FaClock } from "react-icons/fa";
 
 function Navbar() {
