@@ -3,7 +3,7 @@ import { API } from "../../api/api";
 import Sidebar from "../sidebar/Sidebar";
 import Navbar from "../navbar/Navbar";
 import { useNavigate } from "react-router-dom";
-import "./AddCategory.css";
+import "./addcategory.css";
 import { 
   FaFolderPlus, 
   FaTag, 
