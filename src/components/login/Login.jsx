@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { API } from "../../api/api";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link} from "react-router-dom";
 import "./login.css";
 import logo from "../../assets/logo.png";
 
@@ -122,7 +122,8 @@ Login
 
 <div className="login-footer">
 <span>Don't have an account?</span>
-<a href="/register" className="register-link">Sign up</a>
+<Link className="register-link" to='/register'>Sign up</Link>
+
 </div>
 
 </div>
