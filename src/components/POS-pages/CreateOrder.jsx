@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { API, BASE_URL } from "../../api/api";
+import { API} from "../../api/api";
 import Sidebar from "../sidebar/Sidebar";
 import Navbar from "../navbar/Navbar";
 import { useNavigate } from "react-router-dom";
@@ -250,7 +250,7 @@ function CreateOrder() {
                       <div className="product-image">
                         {!imageErrors[product._id] && product.image ? (
                           <img 
-                            src={`${BASE_URL}/uploads/${product.image}`} 
+                            src={product.image} 
                             alt={product.name}
                             onError={() => handleImageError(product._id)}
                           />

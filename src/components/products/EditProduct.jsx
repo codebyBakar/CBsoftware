@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { API, BASE_URL } from "../../api/api";
+import { API} from "../../api/api";
 import Sidebar from "../sidebar/Sidebar";
 import Navbar from "../navbar/Navbar";
 import "./editproduct.css";
@@ -365,7 +365,7 @@ function EditProduct() {
                     ) : existingImage && !image ? (
                       <div className="image-preview">
                         <img 
-                          src={`${BASE_URL}/uploads/${existingImage}`} 
+                          src={existingImage} 
                           alt={product.name}
                           onError={(e) => {
                             e.target.onerror = null;

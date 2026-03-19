@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { API, BASE_URL } from "../../api/api";
+import { API } from "../../api/api";
 import Sidebar from "../sidebar/Sidebar";
 import Navbar from "../navbar/Navbar";
 import { useNavigate } from "react-router-dom";
@@ -357,7 +357,7 @@ function AllProducts() {
                       <td className="image-cell">
                         {!imageErrors[p._id] && p.image ? (
                           <img
-                            src={`${BASE_URL}/uploads/${p.image}`}
+                            src={p.image}
                             alt={p.name}
                             className="product-thumbnail"
                             onError={() => handleImageError(p._id)}
